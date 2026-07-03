@@ -97,5 +97,6 @@
 #include <avr/io.h>
 
 void system_init(void);
+void system_reset(void);
 
 #endif /* SYSTEM_H_ */

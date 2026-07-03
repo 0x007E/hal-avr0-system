@@ -67,3 +67,21 @@ void system_init(void)
     #endif
 }
 
+/**
+ * @brief Issues a software reset to the microcontroller.
+ * 
+ * @details
+ * This function performs a software reset by writing the software reset command to the `RSTCTRL` register. After issuing the reset command, the microcontroller will immediately reset and restart its execution from the reset vector. This is useful for recovering from error states or applying new configurations that require a reset to take effect.
+ * 
+ * @note 
+ * - The function makes use of the **Configuration Change Protection** (CCP) mechanism (`CCP = CCP_IOREG_gc`) before writing to protected `CLKCTRL` registers.  
+ * - This function does not return, as the device will reset immediately after the command is issued. Ensure that any necessary cleanup or state saving is performed before calling this function if required.
+ * 
+ * @warning Use this function with caution, as it will cause an immediate reset of the device, which may lead to loss of unsaved data or interruption of critical processes.
+ */
+void system_reset(void)
+{
+    CCP = CCP_IOREG_gc;
+    RSTCTRL.SWRR = RSTCTRL_SWRE_bm;
+}
+
