@@ -50,7 +50,7 @@ git submodule add https://github.com/0x007E/hal-avr0-system.git hal/avr0/system
 
 ## Programming
 
-Additional parameters like clock and peripheral speed can be setup in the [header file](./system.h). A user friendly description can be found [here](https://blog.sunriax.at/hal-avr0-system/system_8h.html).
+Additional parameters like clock and peripheral speed can be setup in the [header file](./system.h). A user friendly description can be found [here](https://0x007e.github.io/hal-avr0-system/system_8h.html).
 
 ```c
 #include "../hal/avr0/system/system.h"
