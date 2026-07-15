@@ -2,6 +2,8 @@
 
 # `hal-avr0-system` - AVR0 System Hardware Abstraction
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/0x007E/hal-avr0-system)
+
 The `hal-avr0-system` is a lightweight hardware abstraction library for `AVR0` microcontrollers. It provides a clean interface for system clock initialization and software-triggered system reset while hiding direct register-level interaction from higher software layers. The library is intended for projects that want to separate low-level device startup code from application logic and establish a small, reusable system layer for AVR0 targets.
 
 ## Features
@@ -32,7 +34,7 @@ The library can be downloaded (`zip` or `tar`), cloned or used as submodule in a
 
 | Type      | File               | Description              |
 |:---------:|:------------------:|:-------------------------|
-| Library   | [zip](https://github.com/0x007E/hal-avr0-system/releases/latest/download/library.zip) / [tar](https://github.com/0x007E/hal-avr0-system/releases/latest/download/library.tar.gz) | AVR0 system library |
+| Library   | [zip](https://github.com/0x007E/hal-avr0-system/releases/latest/download/library.zip) / [tar](https://github.com/0x007E/hal-avr0-system/releases/latest/download/library.tar.gz) | AVR0 `system` library |
 
 ### Using with `git clone`
 
@@ -45,7 +47,7 @@ mv ./hal/avr0/hal-avr0-system ./hal/avr0/system
 ### Using as `git submodule`
 
 ```sh
-git submodule add https://github.com/0x007E/hal-avr0-system.git hal/avr0/system
+git submodule add https://github.com/0x007E/hal-avr0-system.git ./hal/avr0/system
 ```
 
 ## Programming
