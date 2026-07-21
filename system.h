@@ -13,7 +13,7 @@
  * 
  * @note This file is part of a larger embedded systems project and subject to the license specified in the repository. For updates  and the complete revision history, see the GitHub repository.
  * 
- * @see https://github.com/0x007e/hal-avr0-mega "AVR ATmega GitHub Repository"
+ * @see https://github.com/0x007e/hal-avr0-system "AVR0 System HAL GitHub Repository"
  */
 
 #ifndef SYSTEM_H_
